@@ -5,7 +5,6 @@ The required accounts to complete the workshop are:
 ```
 - GitHub
 - OpenWeatherMap
-- Docker Hub
 ```
 
 Signup GitHub and fork the workshop repository
@@ -14,17 +13,15 @@ Signup GitHub and fork the workshop repository
 - https://github.com/arainho/secure-git-workshop/fork
 ```
 
+Make sure to uncheck the main branch only checkbox when forking the workshop repository.
+
+
 Signup and create key for OpenWeatherMap
 ```
 - https://home.openweathermap.org/users/sign_up
 - https://home.openweathermap.org/api_keys 
 ```
 
-Signup and create token for Docker Hub
-```
-- https://hub.docker.com/signup
-- https://hub.docker.com/settings/security?generateToken=true
-```
 
 Signup SonarCloud, create a organization, plus a project and generate a token
 ```
@@ -34,38 +31,17 @@ https://sonarcloud.io/projects/create
 https://sonarcloud.io/account/security
 ```
 
-### 2. Choose your machine
+### 2. Virtual Machine Setup
 
-#### Option A - Your Laptop
-The adviced operating systems are _macOS or Linux_ with `bash` or `zsh` shell.  
-Move to item 3. Install requirements.
+### 1. Install requirements
+Make sure you have all the required tools installed on your (virtual) machine.
 
-#### Option B - Linux VM  
-If you have a machine with MS Windows, this is the advised path to proceed.   
-All the software is pre-installed with the appropriate versions in the provided [Vagrant Box](Vagrantfile).   
-Skip item 3. Install requirements.    
-
-Download and install VirtualBox and Vagrant:    
-```
-www.virtualbox.org/wiki/Downloads
-www.vagrantup.com/downloads
-```
-
-Start the vagrant box with:
-```bash
-vagrant up --provider virtualbox
-vagrant ssh
-```
-
-### 3. Install requirements
-This is only required for option A - your Laptop.   
-The required tools are the following:     
 ```
 - git *
 - make *
 - docker *
 - python3
-- openjdk 18
+- openjdk 21+
 - curl
 - jq
 - bat (optional)
